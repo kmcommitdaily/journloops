@@ -7,3 +7,6 @@ Welcome to my space where I share my coding journey, little case studies, and le
 - Weather Dashboard   
 - WatchPick 
 - Everyday News  
+
+### Posts
+-[Get your hands dirty: How I used APIs to bring real data into my websites and why every beginner should practice with them](posts/get-your-hands-dirty.md)
