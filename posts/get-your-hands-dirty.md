@@ -1,4 +1,4 @@
-# Get Your Hands Dirty: How I Used APIs to Bring Real Data Into My Websites (and Why Every Beginner Should Practice With Them)
+# Developer Case Study: How I Used APIs to Bring Real Data Into My Websites (and Why Every Beginner Should Practice With Them)
 
 You’ve built pixel-perfect pages with HTML and CSS. Then JavaScript, then React, then Next.js. Each step feels like progress until you run into one of the most intimidating walls in programming: APIs.
 Do I understand enough to start?
@@ -260,5 +260,5 @@ Areas I Aim to Improve Next
 
 ### Conclusion
 
-I could’ve spent more time perfecting each project for my portfolio, but that wasn’t the goal. Instead, I focused on questioning and documenting my process. I’ve learned that APIs aren’t just technical tools,  they’re the bridge between ideas and real-world data. By building projects that connect both frontend and backend, I came to understand how data moves, how systems interact, and how essential it is to pause and ask questions that strengthen your fundamentals. I didn’t just read tutorials, I worked with real data, broke things, fixed them, and documented the confusion and breakthroughs along the way. Through that hands-on approach, I simplified API concepts in a way that made sense to me as a beginner. In the end, I achieved what I set out to do: not just build things, but learn from them..
+I could’ve spent more time perfecting each project for my portfolio, but that wasn’t the goal. Instead, I focused on questioning and documenting my process. I’ve learned that APIs aren’t just technical tools,  they’re the bridge between ideas and real-world data. By building projects that connect both frontend and backend, I came to understand how data moves, how systems interact, and how essential it is to pause and ask questions that strengthen your fundamentals. I didn’t just read tutorials, I worked with real data, broke things, fixed them, and documented the confusion and breakthroughs along the way. Through that hands-on approach, I simplified API concepts in a way that made sense to me as a beginner. In the end, I achieved what I set out to do: not just build things, but learn from them.
 
