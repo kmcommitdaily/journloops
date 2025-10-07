@@ -17,10 +17,11 @@ In this case study, I’ll share three simple projects where I got my hands dirt
 * Frontend: React & Next.js
 
 ### Key Learnings
+
 __Environment Variables__
 
 When I first started working with APIs, I thought the only important thing was getting data to show up on my website. But soon, I realized there’s more to it than just connecting and displaying information. APIs use keys to let us access data — kind of like a password.
-Thank go, I was able to skip one of the rookie mistakes of  pasting those keys directly into my code (rookie mistake 😅). I am aware that anyone who saw my code could steal that key and use it. That’s when I learned about something called environment variables — and they completely changed how I handle security.
+Thank god, I was able to skip one of the rookie mistakes of  pasting those keys directly into my code (rookie mistake 😅). I am aware that anyone who saw my code could steal that key and use it. That’s when I learned about something called environment variables — and they completely changed how I handle security.
 I now think of the .env file as my website’s safety vault. It’s where I store sensitive data like API keys, units, or database URLs — basically, anything I don’t want to expose publicly. Then, I use Python’s dotenv library to safely load those values when I need them.
 
 ```python
@@ -40,9 +41,12 @@ These are the things I would like to explore more in my future projetcs:
 
 
 __Error Handling__
+
 Responses are how we get data from an API — and they need to be handled with care. They can work for you or against you, depending on how you manage them.
 When I first started experimenting with my Weather Dashboard, the data was pretty simple. It returned a clean, easy-to-read set of information like this:
-![weather dasahboard data screenshot](assets/weather-data-struc.png)
+
+![weather dasahboard data screenshot](../assets/weather-data-struc.png)
+
 If I wanted a specific value, I could just do something like:
 
 ```python
@@ -51,7 +55,9 @@ data["main"]["humidity"]
 And that was it. It worked perfectly.
 
 But when I moved on to my Watch-Pick Project, things got a little more complicated.
-![movies data screenshot](assets/movies-data-struc.png)
+
+![movies data screenshot](../assets/movies-data-struc.png)
+
 This time, the data came wrapped inside a list of dictionary. I had to slow down and really study the structure before accessing it. Otherwise, I’d end up with frustrating errors or missing values.
 So before exposing anything on my site, I started checking if the data existed first — like this:
 ```python
@@ -75,13 +81,16 @@ Here’s what helped me figure things out:
 
 These lessons became even more important when I built my Everyday News project, where API responses changed depending on user input. I realized that error handling isn’t just about fixing bugs — it’s about preventing them before they happen
 
-_Try–Catch Method_
+**_Try–Catch Method_**
+
 This is probably the most useful error-handling concept I learned throughout these projects.
 At first, I was hesitant to use it — I honestly thought a simple if or try-except block would be enough. But I quickly realized that working with API data is unpredictable. It’s coming from a third-party source, and if that source ever changes, I don’t want my website to just collapse or display nothing.
 Imagine this: the API changes the structure of its data, or removes a key you’re trying to access. Without proper error handling, your whole app could break. That’s where a try–catch (or try–except) block comes in. It allows us to predict and manage errors gracefully when unexpected things happen.
 Not gonna lie — I didn’t fully maximize this method in my three projects. I only used it a few times here and there. But looking back, I wish I had used it more often. It could’ve saved me from a few frustrating debugging sessions 😅.
+
 Examples:
-_without try-catch metho_
+
+**_without try-catch method_**
 
 ```python
   useEffect(() => {
@@ -98,10 +107,12 @@ _without try-catch metho_
   }, [city]);
 ```
 
-_Result_
-![weather dashboard crashed Screenshot](assets/no-errror.png)
+**_Result_**
 
-_with try-catch method_
+![weather dashboard crashed Screenshot](../assets/no-errror.png)
+
+
+**_with try-catch method_**
 
 ```python
   useEffect(() => {
@@ -121,9 +132,9 @@ _with try-catch method_
     };
 ```
 
-_Result_
+**_Result_**
 
-![weather dashboard proper error handling Screenshot](assets/failed-fetch.png)
+![weather dashboard proper error handling Screenshot](../assets/failed-fetch.png)
 
 In this two example, I learned how to catch specific errors, which made debugging much easier. This approach doesn’t just prevent random crashes — it also improves the user experience by showing clear feedback instead of silent failures.
 It’s one of those lessons that only makes sense after you’ve broken your code a few times — and that’s exactly how I learned it.
